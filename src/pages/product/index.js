@@ -19,10 +19,10 @@ export default function ProductPage({data, data1, data2, data3}) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3008/api/v1/product/`)
-  const res1 = await fetch(`http://localhost:3008/api/v1/product/?category_id=1`)
-  const res2 = await fetch(`http://localhost:3008/api/v1/product/?category_id=2`)
-  const res3 = await fetch(`http://localhost:3008/api/v1/product/?category_id=3`)
+  const res = await fetch(`https://urchin-app-dga4h.ondigitalocean.app/api/v1/product/`)
+  const res1 = await fetch(`https://urchin-app-dga4h.ondigitalocean.app/api/v1/product/?category_id=1`)
+  const res2 = await fetch(`https://urchin-app-dga4h.ondigitalocean.app/api/v1/product/?category_id=2`)
+  const res3 = await fetch(`https://urchin-app-dga4h.ondigitalocean.app/api/v1/product/?category_id=3`)
   const data = await res.json()
   const data1 = await res1.json()
   const data2 = await res2.json()

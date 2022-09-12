@@ -30,7 +30,7 @@ function Product ({data, data1, data2, data3}) {
                             <div className={`${style['card-food']}`}>
                                 <Link href={`/detailproduct`}>
                                     <div>
-                                        <img className={style.image} src={`http://localhost:3008/uploads/${item.product_image}`}></img>
+                                        <img className={style.image} src={`https://urchin-app-dga4h.ondigitalocean.app/uploads/${item.product_image}`}></img>
                                     </div>
                                 </Link>
                                 <h1 className={style.text1}>{`${item.product_name}`}</h1>
@@ -45,7 +45,7 @@ function Product ({data, data1, data2, data3}) {
                             <div className={`${style['card-food']}`}>
                                 <Link href={`/detailproduct`}>
                                     <div>
-                                        <img className={style.image} src={`http://localhost:3008/uploads/${item.product_image}`}></img>
+                                        <img className={style.image} src={`https://urchin-app-dga4h.ondigitalocean.app/uploads/${item.product_image}`}></img>
                                     </div>
                                 </Link>
                                 <h1 className={style.text1}>{`${item.product_name}`}</h1>
@@ -60,7 +60,7 @@ function Product ({data, data1, data2, data3}) {
                             <div className={`${style['card-food']}`}>
                                 <Link href={`/detailproduct/${item.product_id}`}>
                                     <div>
-                                        <img className={style.image} src={`http://localhost:3008/uploads/${item.product_image}`}></img>
+                                        <img className={style.image} src={`https://urchin-app-dga4h.ondigitalocean.app/uploads/${item.product_image}`}></img>
                                     </div>
                                 </Link>
                                 <h1 className={style.text1}>{`${item.product_name}`}</h1>
@@ -75,7 +75,7 @@ function Product ({data, data1, data2, data3}) {
                             <div className={`${style['card-food']}`}>
                                 <Link href={`/detailproduct`}>
                                     <div>
-                                        <img className={style.image} src={`http://localhost:3008/uploads/${item.product_image}`}></img>
+                                        <img className={style.image} src={`https://urchin-app-dga4h.ondigitalocean.app/uploads/${item.product_image}`}></img>
                                     </div>
                                 </Link>
                                 <h1 className={style.text1}>{`${item.product_name}`}</h1>

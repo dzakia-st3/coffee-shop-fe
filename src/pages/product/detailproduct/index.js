@@ -12,7 +12,7 @@ export default function detailproductpage({data}) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3008/api/v1/product/17`)
+  const res = await fetch(`https://urchin-app-dga4h.ondigitalocean.app/api/v1/product/17`)
   const data = await res.json()
   return {
     props:
