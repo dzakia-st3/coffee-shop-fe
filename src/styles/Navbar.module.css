@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  
+  .navbar-left {
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .navbar-left h1 {
+    font-weight: bold;
+  }
+  
+  .navbar-middle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40vw;
+  }
+  
+  .navbar-right {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25vw;
+  }
+  
+  .btn-navbar {
+    background-color: rgba(255, 186, 51, 1);
+    color:rgba(106, 64, 41, 1);
+    width: 10vw;
+    height: 7vh;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn-navbar:hover {
+    color: rgba(255, 186, 51, 1);
+    background-color:rgba(106, 64, 41, 1);
+  }
+  
+
+

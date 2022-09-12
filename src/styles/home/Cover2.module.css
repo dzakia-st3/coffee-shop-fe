@@ -1,0 +1,40 @@
+.cover2 {
+  display: flex;
+  margin: 5% 5%;
+}
+
+.text-cover2 {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  margin-right: 1%;
+}
+
+.cover2-text {
+  width: 50%;
+  justify-content: center;
+  padding: 5% 7%;
+}
+
+.text1 {
+  font-size: 200%;
+}
+
+.text2 {
+  padding-top: 1%;
+}
+
+.box1 {
+  font-size: 100%;
+  margin-top: 3%;
+}
+
+.text-cover2 {
+  margin-top: 4%;
+}
+
+.image2 {
+  padding-right: 2%;
+}

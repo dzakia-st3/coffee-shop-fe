@@ -1,0 +1,41 @@
+.footer-bottom {
+  align-items: flex-start;
+  background-color: rgba(221, 221, 221, .5);
+  justify-content: space-between;
+  padding: 10% 8% 5% 8%;
+  position: relative;
+}
+
+.footer-left {
+  height: 30vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.medsos-footer {
+  width: 50%;
+  justify-content: space-between;
+}
+
+.text1 {
+  font-weight: bold;
+  padding-left: 3%;
+}
+
+.text2 {
+  font-size: 80%;
+}
+
+.footer-right {
+  width: 20vw;
+  justify-content: space-between;
+}
+
+.footer-text-cover {
+  line-height: 200%;
+}
+
+.text3 {
+  font-size: 18px;
+  font-weight:bolder;
+}

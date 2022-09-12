@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  
+  /* -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Sidebar-product {
+  display: flex;
+  width: 40%;
+  text-align: center;
+  justify-content: center;
+  padding: 0 3%;
+}
+
+.sidebar-top h4 {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.sidebar-top h5 {
+  font-size: 100%;
+}
+
+.card-promo {
+  text-align: left;
+  border-radius: 8px;
+  margin-top: 5%;
+}
+
+.mother {
+  background-color: rgba(136, 183, 136, 1);
+}
+
+.father {
+  background-color: rgba(245, 195, 97, 1);
+}
+
+.grandfa {
+  background-color: rgba(197, 147, 120, 1);
+}
+
+.apply {
+  color:#fff;
+  background-color: rgba(106, 64, 41, 1);
+  margin: 5% 0;
+  padding: 2% 0;
+  border-radius: 10px;
+}
+
+.apply:hover {
+  color: rgba(106, 64, 41, 1);
+  background-color: rgba(255, 186, 51, 1);
+}
+
+.text-promo {
+  text-align: left;
+}
+
+.auth {
+  display: flex;
+}
+
+.image-left img {
+  height: 80%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  color:rgba(106, 64, 41, 1);
+  font-weight: bold;
+}
+
+.tabs:not(:last-child) {
+  border-right: 1px solid transparent;
+}
+
+.active-tabs {
+  background: white;
+  border-bottom: 1px solid transparent
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: rgba(106, 64, 41, 1);
+}
+
+.content-tabs {
+  flex-grow: 1;
+  padding-top: 3%;
+}
+
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.active-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: black;
+    background: white;
+  }
+  
+}

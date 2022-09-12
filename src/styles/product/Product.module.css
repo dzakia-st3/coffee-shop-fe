@@ -1,0 +1,33 @@
+.product {
+    width: 100%;
+    padding: 0 7%;
+}
+
+.card-food {
+    height: 37vh;
+    width: 12vw;
+    border-radius: 13px;
+    text-align: center;
+    box-shadow: 3px 3px 10px #BCBABA;
+    padding: 2% 2%;
+    margin-bottom: 5%;
+}
+
+.image {
+    border-radius: 100%;
+    margin-top: -3%;
+}
+
+.text {
+    margin-top: 50%;
+}
+.text1 {
+    font-weight: bold;
+    font-size: 120%;
+    margin-bottom: 6%;
+}
+
+.text2 {
+    color: rgba(106, 64, 41, 1);
+    font-weight: bold;
+}
