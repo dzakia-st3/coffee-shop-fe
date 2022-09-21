@@ -1,78 +1,182 @@
+.main-container {
+  margin-top: -60px;
+  padding: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% 5%;
+  position: relative;
+  box-sizing: border-box;
+  width: 80%;
+}
+
 .user {
-    display: flex;
-    text-align: center;
+  display: flex;
+  background-color: wheat;
+  border-radius: 8px;
+  justify-content: space-evenly;
+}
+
+.profile-right {
+  width: 60%;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 5% 0;
+  box-shadow: 3px 4px 5px rgb(120, 74, 50);
 }
 
 .profile-left {
-    background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 5%;
+  text-align: center;
 }
 
 .image {
-    border-radius: 100%;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 .btn1 {
-    margin-top: 7%;
-    color:rgba(106, 64, 41, 1);
-    font-weight: bold;
-    font-size: 90%;
-    background-color: rgba(255, 186, 51, 1);
-    width: 13vw;
-    height: 5vh;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn1:hover {
-    background-color: rgba(106, 64, 41, 1);
-    color: #fff;
-  }
+  margin-top: 7%;
+  color: rgba(106, 64, 41, 1);
+  font-weight: bold;
+  font-size: 90%;
+  background-color: rgba(255, 186, 51, 1);
+  width: 13vw;
+  height: 5vh;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: rgba(106, 64, 41, 1);
+  color: #fff;
+}
 
 
-  .btn2 {
-    margin-top: 7%;
-    color: #fff;
-    font-weight: bold;
-    font-size: 90%;
-    background-color: rgba(106, 64, 41, 1);
-    width: 13vw;
-    height: 5vh;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn2:hover {
-    background-color: rgba(255, 186, 51, 1);
-    color: rgba(106, 64, 41, 1);
-  }
+.btn2 {
+  margin-top: 7%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 90%;
+  background-color: rgba(106, 64, 41, 1);
+  width: 13vw;
+  height: 5vh;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  .btn3 {
-    margin-top: 7%;
-    color: rgba(106, 64, 41, 1);
-    border: 1px solid rgba(159, 159, 159, 1);
-    font-weight: bold;
-    font-size: 90%;
-    background-color: #fff;
-    width: 13vw;
-    height: 8vh;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  .btn3:hover {
-    background-color: rgba(255, 186, 51, 1);
-    color: rgba(106, 64, 41, 1);
-  }
+.btn2:hover {
+  background-color: rgba(255, 186, 51, 1);
+  color: rgba(106, 64, 41, 1);
+}
 
-  .text1 {
-    color: rgba(106, 64, 41, 1);
-    font-weight: bolder;
-    font-size: 120%;
-  }
+.btn3 {
+  margin-top: 15%;
+  color: rgba(106, 64, 41, 1);
+  border: 1px solid rgba(159, 159, 159, 1);
+  font-weight: bold;
+  font-size: 90%;
+  background-color: #fff;
+  width: 13vw;
+  height: 8vh;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
-  .text2 {
-    color: rgba(106, 64, 41, 1);
-    font-size: 90%;
-  }
+.btn3:hover {
+  background-color: rgba(255, 186, 51, 1);
+  color: rgba(106, 64, 41, 1);
+}
 
-  
+.text1 {
+  color: rgba(106, 64, 41, 1);
+  font-weight: bolder;
+  font-size: 120%;
+}
+
+.text2 {
+  color: rgba(106, 64, 41, 1);
+  font-size: 90%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2% 0 10% 0;
+}
+
+.card {
+  margin: 5% 5% 0 5%;
+}
+
+.input {
+  background: none;
+  padding: 2% 0%;
+  outline: none;
+}
+
+.sub-box-inner {
+  width: 45%;
+  margin-right: 5%;
+}
+
+.line {
+  width: 100%;
+  border-color: black;
+}
+
+.text3 {
+  color: grey;
+}
+
+.text4 {
+  font-weight: bolder;
+  font-size: larger;
+  text-align: left;
+  padding-bottom: 3%;
+}
+
+.box-inner {
+  display: flex;
+}
+
+.button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4% 0;
+}
+
+.button-option {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 50px;
+  border: 3px solid grey;
+}
+
+.button-option:hover {
+  background-color: rgba(255, 186, 51, 1);
+  border: 3px solid rgba(106, 64, 41, 1);
+}
+
+.images {
+  position: absolute;
+  height: 143vh;
+  width: 100%;
+}
+
+.line-bottom {
+  width: 100%;
+  height: 15px;
+  background-color: rgba(106, 64, 41, 1);
+  border-radius: 0 0 4px 4px;
+}

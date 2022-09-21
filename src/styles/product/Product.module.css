@@ -16,6 +16,7 @@
 .image {
     border-radius: 100%;
     margin-top: -3%;
+    cursor: pointer;
 }
 
 .text {
