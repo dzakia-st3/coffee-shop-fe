@@ -72,7 +72,7 @@ export default function Testimoni() {
             <div className={`${style['box-cover']} ${style['box-cover-content']} mx-auto`}>
                 <div>
                     <h1 className={style.text2}>Check our promo <br/> today!</h1>
-                    <h4>Let's see the deals and pick yours!</h4>
+                    <h4>{`Let's see the deals and pick yours!`}</h4>
                 </div>
                 <button className={`${style['btn3']} ${style['btn3:hover']}`}>See Promo</button>
             </div>

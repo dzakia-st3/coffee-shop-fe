@@ -28,7 +28,7 @@ function Product({ data, data1, data2, data3}) {
                     <div className={toggleState === 1 ? "content active-content" : "content"} onClick={() => toggleTab(1)}>
                         {result.map((item, index) => {
                             return (
-                                <div className={`${style['card-food']}`}>
+                                <div className={`${style['card-food']}`} key={index}>
                                     <Link href={`/product/detailproduct/${item.product_id}`}>
                                         <div>
                                             <img className={style.image} src={`${process.env.URL_BE}/uploads/${item.product_image}`}></img>
@@ -43,7 +43,7 @@ function Product({ data, data1, data2, data3}) {
                     <div className={toggleState === 2 ? "content active-content" : "content"} onClick={() => toggleTab(1)}>
                         {result1.map((item, index) => {
                             return (
-                                <div className={`${style['card-food']}`}>
+                                <div className={`${style['card-food']}`} key={index}>
                                     <Link href={`/product/detailproduct/${item.product_id}`}>
                                         <div>
                                             <img className={style.image} src={`${process.env.URL_BE}/uploads/${item.product_image}`}></img>
@@ -58,7 +58,7 @@ function Product({ data, data1, data2, data3}) {
                     <div className={toggleState === 3 ? "content active-content" : "content"} onClick={() => toggleTab(1)}>
                         {result2.map((item, index) => {
                             return (
-                                <div className={`${style['card-food']}`}>
+                                <div className={`${style['card-food']}`} key={index}>
                                     <Link href={`/product/detailproduct/${item.product_id}`}>
                                         <div>
                                             <img className={style.image} src={`${process.env.URL_BE}/uploads/${item.product_image}`}></img>
@@ -73,7 +73,7 @@ function Product({ data, data1, data2, data3}) {
                     <div className={toggleState === 4 ? "content active-content" : "content"} onClick={() => toggleTab(1)}>
                         {result3.map((item, index) => {
                             return (
-                                <div className={`${style['card-food']}`}>
+                                <div className={`${style['card-food']}`} key={index}>
                                     <Link href={`/product/detailproduct/${item.product_id}`}>
                                         <div>
                                             <img className={style.image} src={`${process.env.URL_BE}/uploads/${item.product_image}`}></img>

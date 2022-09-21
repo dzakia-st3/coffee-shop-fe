@@ -9,7 +9,7 @@ export default function FormForgot () {
             </div>
             <div className={style.text}>
                 <p className={style.text1}>Forgot your password?</p>
-                <p className={style.text2}>Don't worry, we got your back!</p>
+                <p className={style.text2}>{`Don't worry, we got your back!`}</p>
             </div>
             <div className={style.forgotinput}>
                 <input type="text" className={`${style.form} w-full max-w-xs`} placeholder="Enter your email address to get link"/>

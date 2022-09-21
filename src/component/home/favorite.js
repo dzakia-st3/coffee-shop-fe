@@ -3,8 +3,8 @@ import style from "../../styles/home/Favorite.module.css"
 export default function Favorite() {
     return (
         <div className={style.favorite}>
-            <p className={`${style['favorite-p1']}`}>Here is People's Favorite</p>
-            <p className={`${style['favorite-p2']}`}>Let's choose and have a bit taste of people's favorite. It might be yours too!</p>
+            <p className={`${style['favorite-p1']}`}>{`Here is People's Favorite`}</p>
+            <p className={`${style['favorite-p2']}`}>{`Let's choose and have a bit taste of people's favorite. It might be yours too!`}</p>
             <div className={`${style['content-favorite']}`}>
                 <div className={`${style['card-cover']}`}>
                     <div className={`${style['image-card']}`}>

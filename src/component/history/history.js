@@ -8,7 +8,7 @@ export default function History() {
             </div>
             <div className={style.content}>
                 <div className={`${style['content-top']}`}>
-                    <h1 className={style.text1}>Let's see what you have bought!</h1>
+                    <h1 className={style.text1}>{`Let's see what you have bought!`}</h1>
                     <h5 className={style.text3}>Long press to delete item</h5>
                 </div>
                 <div className={`${style['card-history']}`}>

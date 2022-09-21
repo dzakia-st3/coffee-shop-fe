@@ -8,11 +8,11 @@ const Layout =  ({title="Home", withNavbar=false, withFooter=false, children}) =
             <Head>
                 {/* Link Font */}
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
                 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
 
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
                 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
 
                 <title>{title} - Coffe Shop</title>
