@@ -85,11 +85,11 @@ export default function Profile() {
                             <div className={style.button}>
                                 <div className='flex'>
                                     <div className={`${style['button-option']}`}></div>
-                                    <h3 className={style.text3}>Male</h3>
+                                    <h3 className={`${style['text3']} pl-2`}>Male</h3>
                                 </div>
-                                <div className='flex'>
+                                <div className='flex text-center'>
                                     <div className={`${style['button-option']}`}></div>
-                                    <h3 className={style.text3}>Female</h3>
+                                    <h3 className={`${style['text3']} pl-2`}>Female</h3>
                                 </div>
                             </div>
                         </div>
