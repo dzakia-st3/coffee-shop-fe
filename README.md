@@ -7,6 +7,10 @@ Coffee-Shop is a web application that helps in ordering food or drinks
 Using Netlify for deployment. Here's the link,
 [demo](https://coffe-shop-dzakia.netlify.app/)
 
+## Related
+
+[Coffee-Shop BE](https://github.com/dzakia-st3/coffee-shop-be)
+
 ## Documentation 
 
 <img src="./public/image/Coffee-Shop-Home.png"/>
