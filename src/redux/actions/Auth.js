@@ -22,7 +22,6 @@ const LoginError = (error) => {
 
 export const AuthLogin = (formData) => {
     return (dispatch) => {
-        console.log(formData, 'cek data login actio')
         dispatch(LoginRequest())
         axios({
             method: "POST",
@@ -34,11 +33,9 @@ export const AuthLogin = (formData) => {
         })
         .then ((res) => {
             dispatch(LoginSucces(res.data.data))
-            console.log(res.data.data, 'cek data success login action')
         })
         .catch((err)=> {
             dispatch(LoginError(err.response.data))
-            console.log(err.response.data, 'cek data error login action')
         })
     }
 }
@@ -84,11 +81,9 @@ export const AuthRegister = (formData) => {
         })
         .then ((res) => {
             dispatch(RegisterSucces(res.data.data))
-            console.log(res.data.data, 'cek isi succes regist')
         })
         .catch((err)=> {
             dispatch(RegisterError(err.response.data))
-            console.log(err.response.data, 'cek isi error regist')
         })
     }
 }

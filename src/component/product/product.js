@@ -4,7 +4,6 @@ import Link from "next/link"
 import { useRouter } from 'next/router'
 
 function Product({ data, data1, data2, data3}) {
-    console.log(data1, 'ini data product')
     const result = data.data
     const result1 = data1.data
     const result2 = data2.data

@@ -5,7 +5,6 @@ import { useRouter } from "next/router"
 export default function DetailProduct({ data }) {
     const [count, setCount] = useState(0)
     const result = data?.data[0]
-    console.log(data, 'cek product')
     return (
         <div className={`${style['detail-product']} flex`}>
             <div className={`${style['detail-left']}`}>
