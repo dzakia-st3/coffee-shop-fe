@@ -37,13 +37,16 @@ export default function DetailProduct({ data }) {
                     </div>
                     <div className={`${style['count-order-box ']} flex`}>
                         <div className={`${style['count-order']} flex`}>
-                            <button onClick={() => setCount(count + 1)}
+                            <button 
+                                onClick={() => setCount(count + 1)}
                                 className={`${style['btn-order']} ${style['btn-order:hover']} text-black bg-white px-4 py-2 rounded `}>
                                 +
                             </button>
                             <span className={`${style['text2']} m-5 text-black`}>{count}</span>
-                            <button onClick={() => setCount(count - 1)}
-                                className={`${style['btn-order']} ${style['btn-order:hover']} text-black bg-white px-4 py-2 rounded `}>
+                            <button
+                                onClick={() => setCount(count - 1)}
+                                className={`${style['btn-order']} ${style['btn-order:hover']} text-black bg-white px-4 py-2 rounded `} 
+                                disabled={count == 0}>
                                 -
                             </button>
                         </div>

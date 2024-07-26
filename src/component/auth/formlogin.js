@@ -47,7 +47,7 @@ export default function FormLogin() {
                 <div className={`${style['form-navbar']}`}>
                     <div className={style.top}>
                         <img src='/image/coffee 1.png'></img>
-                        <h1 className={style.text1}>Coffe Shop</h1>
+                        <h1 className={style.text1}>Coffee Shop</h1>
                     </div>
                     <Link href={'/auth/register'}><button className={style.btn}>Sign Up</button></Link>
                 </div>

@@ -3,10 +3,9 @@ import Link from 'next/link'
 
 export default function Cart() {
     return (
+
         <div className={style.cart}>
-            <div>
-                <img className={style.image} src="/image/payment.png"></img>
-            </div>
+
             <div className={style.content}>
                 <div className={`${style['content-left']}`}>
                     <div>
@@ -101,3 +100,8 @@ export default function Cart() {
 
     )
 }
+
+
+// <div>
+//                 <img className={style.image} src="/image/payment.png"></img>
+//             </div>

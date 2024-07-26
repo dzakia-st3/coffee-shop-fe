@@ -23,7 +23,7 @@ export default function Navbar() {
       <Link href={'/home'}>
         <div className={`${style['navbar-left']}`}>
           <img src='/image/coffee 1.png'></img>
-          <h1>Coffe Shop</h1>
+          <h1>Coffee Shop</h1>
         </div>
       </Link>
       <div className={`${style['navbar-middle']}`}>

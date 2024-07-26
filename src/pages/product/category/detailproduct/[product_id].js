@@ -1,8 +1,8 @@
-import Layout from '../../../layouts/layouts'
-import DetailProduct from '../../../component/detailproduct/detailproduct'
+import Layout from '../../../../layouts/layouts'
+import DetailProduct from '../../../../component/detailproduct/detailproduct'
+import {useRouter} from 'next/router'
 
-export default function detailproductpage({products}) {
-  console.log(products, 'cek data di slug')
+export default function DetailProductpage({products}) {
   return (
     <>
     <Layout title='Detail Product' withNavbar withFooter>

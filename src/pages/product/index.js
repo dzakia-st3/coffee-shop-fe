@@ -3,17 +3,17 @@ import Product from '../../component/product/product'
 import Layout from '../../layouts/layouts'
 import Link from "next/link"
 
-export default function ProductPage({data, data1, data2, data3}) {
+export default function ProductPage({ data, data1, data2, data3 }) {
   return (
     <>
-    <Layout title='Product' withNavbar withFooter>
-    <div className='flex'>
-    <Sidebar/>
-    <Link href={'/detailproduct/' + data.product_id}>
-      <Product data={data} data1={data1} data2={data2} data3={data3} />
-    </Link>
-    </div>
-    </Layout>
+      <Layout title='Product' withNavbar withFooter>
+        <div className='flex'>
+          <Sidebar />
+          <Link href={'/detailproduct/' + data.product_id}>
+            <Product data={data} />
+          </Link>
+        </div>
+      </Layout>
     </>
   )
 }
@@ -27,12 +27,16 @@ export async function getServerSideProps() {
   const data1 = await res1.json()
   const data2 = await res2.json()
   const data3 = await res3.json()
+
+  console.log(res, 'cek isi res')
+
+
   return {
     props:
     {
-      data:data, 
-      data1: data1, 
-      data2: data2, 
+      data: data,
+      data1: data1,
+      data2: data2,
       data3: data3,
     }
   }

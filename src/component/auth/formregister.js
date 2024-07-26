@@ -28,7 +28,7 @@ export default function FormRegister() {
                 text: 'Register Success',
             })
             router.push('/auth/login')
-        } 
+        }
         // else {
         //     Swal.fire({
         //         icon: 'error',
@@ -47,7 +47,7 @@ export default function FormRegister() {
                 <div className={`${style['form-navbar']}`}>
                     <div className={style.top}>
                         <img src='/image/coffee 1.png'></img>
-                        <h1 className={style.text1}>Coffe Shop</h1>
+                        <h1 className={style.text1}>Coffee Shop</h1>
                     </div>
                     <Link href={'/auth/login'}><button className={style.btn}>Login</button></Link>
                 </div>

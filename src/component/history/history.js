@@ -3,9 +3,6 @@ import style from './History.module.css'
 export default function History() {
     return (
         <div className={style.history}>
-            <div>
-                <img className={style.image} src="/image/imageDetailProduct.png"></img>
-            </div>
             <div className={style.content}>
                 <div className={`${style['content-top']}`}>
                     <h1 className={style.text1}>{`Let's see what you have bought!`}</h1>
