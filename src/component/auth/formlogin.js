@@ -8,7 +8,6 @@ import Swal from "sweetalert2"
 
 export default function FormLogin() {
     const { data, error, loading, isLogin } = useSelector((state) => state.auth)
-    // console.log(error.message, 'cek isi error di login')
     const dispatch = useDispatch()
     const router = useRouter()
 

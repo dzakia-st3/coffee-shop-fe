@@ -6,13 +6,8 @@ import { AuthLogout } from "../redux/actions/Auth"
 import style from "../styles/Navbar.module.css"
 import Swal from "sweetalert2"
 
-export default function Navbar() {
-  //     useEffect(()=>{
-  //         import("bootstrap/dist/js/bootstrap");
-  // },[])  
-
+export default function Navbar() { 
   const { data, error, loading, isLogin } = useSelector((state) => state.auth)
-  // console.log(error.message, 'cek isi error di login')
   const dispatch = useDispatch()
   const router = useRouter()
 
