@@ -13,19 +13,23 @@ export default function FormLogin() {
 
     const [formLogin, setFormLogin] = useState({
         email: '',
-        password: ''
+        password: '',
     })
 
     const handleLogin = (e) => {
-        e.preventDefault()
-        dispatch(AuthLogin(formLogin))
+        // e.preventDefault()
+        // dispatch(AuthLogin(formLogin))
+        let getdtLogin = JSON.parse(localStorage.getItem('dtl'))
 
-        if (isLogin === true) {
+        // if (isLogin === true)
+        if (getdtLogin && getdtLogin.email == formLogin.email && atob(getdtLogin.password) == formLogin.password) {
             Swal.fire({
                 icon: 'success',
                 title: '',
                 text: 'Login Success',
             })
+            getdtLogin.isactive = true
+            localStorage.setItem('dtl', JSON.stringify(getdtLogin))
             router.replace('/home')
         } else {
             Swal.fire({
@@ -40,7 +44,6 @@ export default function FormLogin() {
     return (
         <div className={style.login}>
             <div className={`${style['container-image']}`}>
-                <img className={style.image} src='/image/Auth.png'></img>
             </div>
             <div className={`${style['container-form']}`}>
                 <div className={`${style['form-navbar']}`}>

@@ -6,8 +6,11 @@ import { AuthLogout } from "../redux/actions/Auth"
 import style from "../styles/Navbar.module.css"
 import Swal from "sweetalert2"
 
-export default function Navbar() { 
-  const { data, error, loading, isLogin } = useSelector((state) => state.auth)
+export default function Navbar() {
+  // const { data, error, loading, isLogin } = useSelector((state) => state.auth)
+
+  let dtlogin = JSON.parse(localStorage.getItem('dtl'))
+
   const dispatch = useDispatch()
   const router = useRouter()
 
@@ -36,7 +39,8 @@ export default function Navbar() {
         </div>
       </div>
       <div className={`${style['navbar-right']}`}>
-        {isLogin ? (
+        {/* isLogin ? ( */}
+        {dtlogin && dtlogin.isactive == true ? (
           <>
             <div className={`${style['container-nav']}`}>
               <img className={style.image2} src='/image/chat.png'></img>
@@ -44,7 +48,7 @@ export default function Navbar() {
                 <div>
                   <img
                     className={style.image}
-                    src='/image/profil1.png'
+                    src="/image/userprofile.png"
                     onClick={() => setOpen(true)}
                     onDoubleClick={() => setOpen(false)}
                   ></img>
@@ -57,12 +61,14 @@ export default function Navbar() {
                           Profile</Link></li>
                       <hr />
                       <li onClick={() => {
-                        dispatch(AuthLogout())
-                        Swal.fire({
-                          icon: 'success',
-                          title: '',
-                          text: 'Logout Success',
-                        })
+                        // dispatch(AuthLogout())
+                        // Swal.fire({
+                        //   icon: 'success',
+                        //   title: '',
+                        //   text: 'Logout Success',
+                        // })
+                        dtlogin.isactive = false
+                        localStorage.setItem('dtl', JSON.stringify(dtlogin))
                         router.push('/home')
                       }}><Link href={'/home'}>
                           Logout</Link></li>

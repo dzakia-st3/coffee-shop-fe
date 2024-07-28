@@ -1,18 +1,29 @@
 import style from '../../styles/profile/Profile.module.css'
+import { useRouter } from 'next/router'
 
 export default function Profile() {
+    const router = useRouter()
+    let dtlogin = JSON.parse(localStorage.getItem('dtl'))
+
+    let logoutClick = () => {
+        console.log(dtlogin)
+        dtlogin.isactive = false
+        localStorage.setItem('dtl', JSON.stringify(dtlogin))
+        router.push('/home')
+    }
+
     return (
         <div className={`${style['main-container']}`}>
             <div>
-                <img className={style.images} src="/image/profile.png"></img>
+                {/* <img className={style.images} src="/image/profile.png"></img> */}
             </div>
             <div className={style.profile}>
                 <p className='text-white font-semibold text-2xl py-6'>User Profile</p>
                 <div className={style.user}>
                     <div className={`${style['profile-left']}`}>
                         <img className={style.image} src="/image/userprofile.png"></img>
-                        <p className={style.text1}>Zulaikha</p>
-                        <p className={style.text2}>zulaikha17@gmail.com</p>
+                        <p className={style.text1}>{dtlogin?.name ? dtlogin.name : 'Your Name'}</p>
+                        <p className={style.text2}>{dtlogin?.email ? dtlogin.email : 'Your Email'}</p>
                         <button className={`${style['btn1']} ${style['btn1:hover']}`}>Choose photo</button>
                         <br />
                         <button className={`${style['btn2']} ${style['btn2:hover']}`}>Remove photo</button>
@@ -23,7 +34,7 @@ export default function Profile() {
                         <br />
                         <button className={`${style['btn1']} ${style['btn1:hover']}`}>Cancel</button>
                         <br />
-                        <button className={`${style['btn3']} ${style['btn3:hover']}`}>Log out</button>
+                        <button className={`${style['btn3']} ${style['btn3:hover']}`} onClick={logoutClick}>Log out</button>
                     </div>
                     <div className={`${style['profile-right']}`}>
                         <div className={`${style['sub-main-container']}`}>

@@ -15,13 +15,18 @@ export default function FormRegister() {
         email: '',
         password: '',
         phone_number: '',
+        isactive: true
     })
 
     const handleRegist = (e) => {
         e.preventDefault()
-        dispatch(AuthRegister(formRegist))
+        // dispatch(AuthRegister(formRegist))
 
-        if (register.isRegister == true) {
+        formRegist.password = btoa(formRegist.password)
+        localStorage.setItem('dtl', JSON.stringify(formRegist))
+
+        // if (register.isRegister == true) 
+        if (formRegist.email != '' && formRegist.password != '') {
             Swal.fire({
                 icon: 'success',
                 title: '',
@@ -41,7 +46,7 @@ export default function FormRegister() {
     return (
         <div className={style.login}>
             <div className={`${style['container-image']}`}>
-                <img className={style.image} src='/image/Auth.png'></img>
+                {/* <img className={style.image} src='/image/Auth.png'></img> */}
             </div>
             <div className={`${style['container-form']}`}>
                 <div className={`${style['form-navbar']}`}>

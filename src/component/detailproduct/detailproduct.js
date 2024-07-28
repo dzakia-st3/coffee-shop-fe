@@ -4,12 +4,14 @@ import { useRouter } from "next/router"
 
 export default function DetailProduct({ data }) {
     const [count, setCount] = useState(0)
-    const result = data?.data[0]
+    console.log(data, 'cek dt')
+    const result = data[0]
     return (
         <div className={`${style['detail-product']} flex`}>
             <div className={`${style['detail-left']}`}>
                 <div>
-                    <img className={style.image} src={`${process.env.URL_BE}/uploads/${result.product_image}`}></img>
+                    {/* <img className={style.image} src={`${process.env.URL_BE}/uploads/${result.product_image}`}></img> */}
+                    <img className={style.image} src={`/image/${result.product_image}`}></img>
                     <p className={style.text5}>Delivery only on <b>Monday to <br /> friday</b> at <b>1 - 7 pm</b></p>
                 </div>
             </div>
@@ -36,7 +38,7 @@ export default function DetailProduct({ data }) {
                     </div>
                     <div className={`${style['count-order-box ']} flex`}>
                         <div className={`${style['count-order']} flex`}>
-                            <button 
+                            <button
                                 onClick={() => setCount(count + 1)}
                                 className={`${style['btn-order']} ${style['btn-order:hover']} text-black bg-white px-4 py-2 rounded `}>
                                 +
@@ -44,7 +46,7 @@ export default function DetailProduct({ data }) {
                             <span className={`${style['text2']} m-5 text-black`}>{count}</span>
                             <button
                                 onClick={() => setCount(count - 1)}
-                                className={`${style['btn-order']} ${style['btn-order:hover']} text-black bg-white px-4 py-2 rounded `} 
+                                className={`${style['btn-order']} ${style['btn-order:hover']} text-black bg-white px-4 py-2 rounded `}
                                 disabled={count == 0}>
                                 -
                             </button>
