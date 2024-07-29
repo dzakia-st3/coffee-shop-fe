@@ -49,13 +49,13 @@ export default function Navbar() {
                   <img
                     className={style.image}
                     src="/image/userprofile.png"
-                    onClick={() => setOpen(true)}
+                    onClick={() => open == false ? setOpen(true) : setOpen(false)}
                     onDoubleClick={() => setOpen(false)}
                   ></img>
                 </div>
                 <div className={`${style['dropdown-menu']}`}>
                   {open ? (
-                    <ul onClick={() => setOpen(false)}>
+                    <ul onClick={() => setOpen(true)}>
                       <li>
                         <Link href={'/profile'}>
                           Profile</Link></li>
